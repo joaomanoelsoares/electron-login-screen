@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require('electron')
+const { app, BrowserWindow, ipcMain, shell } = require('electron')
 const path = require('path')
 const ipc = ipcMain;
 
@@ -42,6 +42,10 @@ const createWindow = () => {
    } else {
     mainWindow.maximize();
    } 
+  })
+
+  ipc.on('reloadBtn', () => {
+    mainWindow.reload();
   })
 
 

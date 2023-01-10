@@ -14,3 +14,8 @@ minimizeBtn.addEventListener('click', () => {
 maxResBtn.addEventListener('click', () => {
     ipc.send('maxResApp')
 })
+
+reloadBtn.addEventListener('click', () => {
+    ipc.send('reloadBtn')
+})
+
