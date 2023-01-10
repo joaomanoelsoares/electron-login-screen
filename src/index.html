@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="./app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js" type="module"></script>
+    <script src="./database.js"></script>
+    
+    <link rel="stylesheet" href="./styles/style.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script defer src="js/appFunctions.js"></script>
+    <title>Hello World!</title>
+  </head>
+  <body class="App draggable">
+    <div class="title-region">
+        <div class="titleBarBtns">
+            <button id="minimizeBtn" class="topBtn minimizeBtn" title="Minimizar"><i class="bi bi-dash-lg"></i></button>
+            <button id="maxResBtn" class="topBtn maximizeBtn" title="Aumentar / Diminuir tela"><i class="bi bi-arrows-fullscreen"></i></button>
+            <button id="closeBtn" class="topBtn closeBtn" title="Fechar"><i class="bi bi-x-lg"></i></button>
+        </div>
+    </div>
+    <form>
+        <h1>Oi! 🥰</h1>
+        <h2>Ótimo ter você de volta! Faça login para acessar a plataforma</h2>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Insira seu e-mail" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Insira sua senha" id="senha" name="senha">
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary">Entrar</button>
+        </div>
+      </form> 
+  </body>
+</html>
